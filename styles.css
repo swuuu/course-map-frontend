@@ -1,0 +1,61 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+}
+
+.body {
+    height: 100vh;
+}
+
+/* top section */
+#title {
+    height: 200px;
+    background: #F00000;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #DC281E, #F00000);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #DC281E, #F00000); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#title .title {
+    color: white;
+    font-weight: bold;
+    font-size: 4rem;
+}
+
+/* middle section */
+.input-col {
+    padding:5% 0;
+    text-align: left;
+}
+
+.course-map-col {
+    padding:5% 0;
+}
+
+/* at the beginning, don't display the borders*/
+.no-border {
+    border: none;
+}
+/* once user submitted something, display the borders of the iframe*/
+.display-course-map-iframe {
+    border: 1px solid #ced4da;
+    border-radius: .25rem;
+}
+
+/* bottom section */
+#bottom {
+    margin:0;
+    padding:2% 20%;
+    background-color: 	#404040;
+    color: #D0D0D0;
+}
+
+.bottom-hr {
+    border: 1px solid #D0D0D0;
+}
+
+.p-align-left {
+    text-align: left;
+}
