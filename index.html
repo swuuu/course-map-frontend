@@ -22,62 +22,65 @@
     <title>McGill Course Map</title>
 </head>
 <body>
-    
-    <div class="body">
-        <!-- Title Section -->
-        <section id="title">
-            <h1 class="title">McGill Course Map</h1>
-        </section>
-
-        <!-- Body Section -->
-        <section id="main" class="container">
-            <div class="row">
-                <div class="col-lg-6 input-col">
-                    <h3>Course Selections</h3>
-                    <p>Use our course map app to visualize the prerequisites you need to take for a specific course(s).</p>
-
-                    <!-- Form that will send data to the backend -->
-                    <form id="user-input-form">
-                        <div class="form-group">
-                            <label for="desiredCourses">Courses you want to take</label>
-                            <input name="desiredCourses" type="text" class="form-control" id="desiredCourses" placeholder="">
-                          </div>
-                          <div class="form-group">
-                            <label for="exemptCourses">Courses you are exempt from or have already taken</label>
-                            <input name="exemptCourses" type="text" class="form-control" id="exemptCourses" placeholder="">
-                          </div>
-                          <button id="submit" class="btn btn-dark">Submit</button>
-                    </form>
-
+    <div class="container-fluid">
+        <div class="main">
+            <!-- Top Section -->
+            <div class="row title-container">
+                <section id="title">
+                    <h1 class="title">McGill Course Map</h1>
+                </section>
+            </div>
+            <!-- Middle Section -->
+            <div class="row middle-container">
+                <div class="col-lg-6">
+                    <div class="input-col">
+                        <h3>Course Selections</h3>
+                        <p>Use our course map app to visualize the prerequisites you need to take for a specific course(s).</p>
+                        <!-- Form that will send data to the backend -->
+                        <form id="user-input-form">
+                            <div class="form-group">
+                                <label for="desiredCourses">Courses you want to take</label>
+                                <input name="desiredCourses" type="text" class="form-control" id="desiredCourses" placeholder="">
+                            </div>
+                            <div class="form-group">
+                                <label for="exemptCourses">Courses you are exempt from or have already taken</label>
+                                <input name="exemptCourses" type="text" class="form-control" id="exemptCourses" placeholder="">
+                            </div>
+                            <button id="submit" class="btn btn-dark">Submit</button>
+                        </form>
+                    </div>
                 </div>
-                <div class="col-lg-6 course-map-col">
-                    <iframe id="course-map-iframe" class="no-border" src="" height="200" width="300" title="Course Map"></iframe>
+                <div class="col-lg-6 course-map-col-container">
+                    <div class="course-map-col">
+                        <iframe id="course-map-iframe" class="no-border" src="" height="200" width="300" title="Course Map"></iframe>
+                    </div>
                 </div>            
             </div>
-        </section>
+        </div>
+        <!-- Bottom Section -->
+        <div class="row bottom-container">
+            <footer>
+                <section id="bottom">
+                    <p class="p-align-left">
+                        This Webapp would not be possible without the input from Sixian Li. 
+                        If you like this project, make sure that you star Sixian’ repo <a href="https://github.com/Deerhound579/mcgill-course-map">here</a>.
+                    </p>
+                    <hr class="bottom-hr">
+                    <p class="p-align-left">
+                        Disclaimer: This project is neither endorsed by nor affilited to McGill University or its subsidaries. 
+                        The use of this product does not gurantee eligibility for any course. As stated in the license, its authors should not be held liable for any loss due to the use of this product. 
+                        Your input might be transferred outside of Canada for processing.
+                    </p>
+                    <hr class="bottom-hr">
+                    <p class="p-align-left">
+                        Repo for backened <a href="https://github.com/jacobthebanana/mcgill-course-map/tree/dockerable">here</a>.
+                    </p>
+                    <hr class="bottom-hr">
+                    <p>Made by <a href="https://ctf.science.mcgill.ca/index.html">CTF</a>😎</p>
+                </section>
+            </footer>
+        </div>
     </div>
 </body>
 <script src="index.js" charset="utf-8"></script>
-<footer>
-<!-- Bottom Section -->
-    <section id="bottom">
-        <p class="p-align-left">
-            This Webapp would not be possible without the input from Sixian Li. 
-            If you like this project, make sure that you star Sixian’ repo <a href="https://github.com/Deerhound579/mcgill-course-map">here</a>.
-        </p>
-        <hr class="bottom-hr">
-        <p class="p-align-left">
-            Disclaimer: This project is neither endorsed by nor affilited to McGill University or its subsidaries. 
-            The use of this product does not gurantee eligibility for any course. As stated in the license, its authors should not be held liable for any loss due to the use of this product. 
-            Your input might be transferred outside of Canada for processing.
-        </p>
-        <hr class="bottom-hr">
-        <p class="p-align-left">
-            Repo for backened <a href="https://github.com/jacobthebanana/mcgill-course-map/tree/dockerable">here</a>.
-        </p>
-        <hr class="bottom-hr">
-        <p>Made by <a href="https://ctf.science.mcgill.ca/index.html">CTF</a>😎</p>
-    </section>
-</footer>
-
 </html>
